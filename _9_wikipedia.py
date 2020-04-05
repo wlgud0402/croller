@@ -1,4 +1,4 @@
-#위키백과
+#위키백과 위키피디아 링크만 수집
 from urllib.request import urlopen
 from bs4 import BeautifulSoup
 import re

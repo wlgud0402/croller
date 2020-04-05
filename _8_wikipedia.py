@@ -1,4 +1,4 @@
-#위키백과
+#위키백과 속 모든링크
 from urllib.request import urlopen
 from bs4 import BeautifulSoup
 
