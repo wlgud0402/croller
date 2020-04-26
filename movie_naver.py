@@ -23,9 +23,12 @@ rankSection = bs.find('tbody')
 # for rank in rankList:
 #     print(rank.a)
 
+
+#어차피 50개밖에없어서 while문 필요 X
 AllrankHref = rankSection.find_all('a')
 i=1
 while i<50:
+    print("나 와일문안")
     for rankHref in AllrankHref:
         href = rankHref.attrs['href']
         text = rankHref.string
