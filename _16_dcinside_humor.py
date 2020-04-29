@@ -12,9 +12,9 @@ req = Request(url="http://web.humoruniv.com/main.html", headers=headers)
 response = urlopen(req)
 
 html = response.read()#.decode("ms949")
-soup = BeautifulSoup(html, 'html.parser')
+bs = BeautifulSoup(html, 'html.parser')
 
-rankSection = soup.find('div',{'class':'best_right'})
+rankSection = bs.find('div',{'class':'best_right'})
 ranks = rankSection.find('li').find_all('a')
 
 for i, rank in enumerate(ranks):
